@@ -1,13 +1,41 @@
+const converter = new showdown.Converter();
+const inputTextarea = document.getElementById("input-textarea");
+const outputArea = document.getElementById("output");
+
 document.getElementById("submit").addEventListener("click", function(e) {
   e.preventDefault();
-  displayOutput();
+  submit(); 
 });
 
-function displayOutput() {
-  console.log("display output");
-  const outputArea = document.getElementById("output");
-  const text = document.createTextNode("Output text goes here");
+document.addEventListener('keydown', function(e) {
+  const key = e.code;
+  const shift = e.shiftKey;
 
+  if (shift && e.code == "Enter") {
+    submit();
+  } else if (shift && e.code == "Backspace") {
+    reset();
+  }
+});
 
-  outputArea.appendChild(text);
+function submit() {
+  const inputText = inputTextarea.value;
+  convertToMarkdown(inputText); 
+}
+
+function displayOutput(convertedText) {
+  const text = convertedText;
+  outputArea.innerHTML = text;
+  inputTextarea.focus();
+}
+
+function convertToMarkdown(input) {
+  const output = converter.makeHtml(input); 
+  displayOutput(output);
+}
+
+function reset() {
+  inputTextarea.value = "";
+  outputArea.innerHTML = "";
+  inputTextarea.focus();
 }

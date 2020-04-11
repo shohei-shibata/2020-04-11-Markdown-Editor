@@ -2,24 +2,24 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Markdown Editor | By Shohei Shibata</title>
+		<title>Mark It Down!!! | By Shohei Shibata</title>
 		<link rel="stylesheet" type="text/css" href="./assets/css/fonts.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/all.min.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
 	</head>
 	<body>      
     <header>
-      <h1>Markdown Editor</h1>
+      <h1>Mark It Down!!!</h1>
     </header>
-		<main>
+		<main class="flex-container-row">
       <div id="input">
         <form>
-          <textarea id="input-textarea"></textarea>
-          <input id="submit" type="submit">
+          <textarea id="input-textarea" autofocus></textarea>
+          <input id="submit" type="submit" value="Convert" class="btn">
         </form>
       </div>
-      <div id="output">
-      </div>
+      <div id="output"></div>
 		</main>
 	</body>
   <script src="./assets/js/main.js"></script>
