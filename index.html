@@ -10,9 +10,10 @@
 	</head>
 	<body>      
     <header>
-      <h1>Mark It Down!!!</h1>
+      <h1 id="title">Mark It Down!!!</h1>
+      <small id="instructions">Tip: Hit <code>Shift + Enter</code> to convert. <code>Shift + Backspace</code> to reset.</small>
     </header>
-		<main class="flex-container-row">
+		<main class="flex-container">
       <div id="input">
         <form>
           <textarea id="input-textarea" autofocus></textarea>
@@ -21,6 +22,13 @@
       </div>
       <div id="output"></div>
 		</main>
+    <footer>
+      <small>Hacked together for Mintbean Hackathon 4/11/2020. </small>
+      <div id="footer-icons">
+        <a target="_blank" href="https://github.com/shohei-shibata" class="footer-social-logo"><i class="fab fa-github fa-2x"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/shohei-shibata-53867a41/" class="footer-social-logo"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </footer>
 	</body>
   <script src="./assets/js/main.js"></script>
 <html>
