@@ -1,0 +1,42 @@
+/* OPEN SANS */
+
+@font-face {
+	font-family: "Open Sans";
+	src: url(../webfonts/Open_Sans/OpenSans-Regular.ttf)
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url(../webfonts/Open_Sans/OpenSans-Bold.ttf)
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url(../webfonts/Open_Sans/OpenSans-Italic.ttf)
+	font-style: italic;
+}
+
+/* BREE SERIF */
+
+@font-face {
+	font-family: "Bree Serif";
+	src: url(../webfonts/Bree_Serif/BreeSerif-Regular.ttf)
+}
+
+/* LITERATA */
+
+@font-face {
+	font-family: "Literata";
+	src: url(../webfonts/Literata/Literata-Regular.ttf)
+}
+@font-face {
+	font-family: "Literata";
+	src: url(../webfonts/Literata/Literata-Italic.ttf)
+	font-style: italic;
+}
+@font-face {
+	font-family: "Literata";
+	src: url(../webfonts/Literata/Literata-Bold.ttf)
+	font-weight: bold;
+}
